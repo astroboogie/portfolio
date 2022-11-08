@@ -7,9 +7,6 @@ import {
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import avatar from "../public/avatar.png";
-import code from "../public/code.png";
-import design from "../public/design.png";
-import consulting from "../public/consulting.png";
 import Image from "next/image";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
@@ -34,13 +31,25 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
+                  className=" cursor-pointer text-2xl mr-6"
                 />
               </li>
               <li>
                 <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.linkedin.com/in/nathaniel-adams/"
+                  className="text-4xl"
+                >
+                  <AiFillLinkedin />
+                </a>
+              </li>
+              <li>
+                <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://drive.google.com/file/d/1VAZra5bMilIHkeblDXHBAGqNhGXfyUUh/view?usp=sharing"
                 >
                   Resume
                 </a>
@@ -59,9 +68,7 @@ export default function Home() {
               of web and mobile products. Join me below and let's build amazing things!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-              <AiFillYoutube />
+              
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-10 md:h-50 md:w-50">
               <Image src={avatar} layout="fill" objectFit="cover" />
